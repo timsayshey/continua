@@ -79,7 +79,7 @@
 						gridActive		= gridActive,
 						thumbPath		= fileExists(expandPath(providerthumbpath)) ? providerthumbpath : '/assets/img/provider_thumbholder.jpg',
 						title			= qProviders.name,
-						description		= qProviders.expected_demographic,
+						description		= qProviders.description,
 						controllerName	= "providers",
 						href			= "href='#urlFor(
 							route		= "admin~Id",
@@ -87,7 +87,7 @@
 							controller	= "providers",
 							action		= "edit",
 							id			= qProviders.id
-						)#'"
+						)#'"	
 					)#
 					
 				</cfloop>

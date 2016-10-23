@@ -23,6 +23,7 @@
 	#hiddenfieldtag(name="categoryController", id="categoryController", value="noteCategories")#	
 	#hiddenfieldtag(name="categoryModel", id="categoryModel", value="noteCategory")#	
 	#hiddenFieldTag(name="addCategoryType", id="addCategoryType", value="dropdown")#
+	#hiddenFieldTag(name="myNote[encounterId]", value="1")#
     
 	<cfset contentFor(formy = true)>
     
@@ -173,10 +174,6 @@
 				)#
 			</div>
 			
-	
-
-	
-	#includePartial(partial="/_partials/formSeperator")#	
 
 	<!--- Get Custom Fields --->
 	#includePartial(partial="/_partials/formFieldsRender")# 

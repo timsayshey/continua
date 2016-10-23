@@ -1,0 +1,88 @@
+
+/*
+Tipue drop 5.0.2
+Copyright (c) 2015 Tipue
+Tipue drop is released under the MIT License
+http://www.tipue.com/drop
+*/
+
+
+#tipue_drop_content
+{
+     display: none;
+     position: absolute;
+	margin: 13px 20px 0 0;
+	line-height: 0;
+	z-index: 1000;
+}
+
+.tipue_drop_box 
+{
+     position: relative;
+	background: #fff;
+	border: 1px solid #dcdcdc;
+	border-radius: 2px;
+	box-shadow: 2px 2px 5px #f9f9f9;
+}
+.tipue_drop_box:after, .tipue_drop_box:before
+{
+	position: absolute;
+	pointer-events: none;
+	border: solid transparent;
+	bottom: 100%;
+	content: "";
+	height: 0;
+	width: 0;
+}
+.tipue_drop_box:after
+{
+	border-bottom-color: #fff;
+	border-width: 8px;
+	left: 42px;
+	margin-left: -8px;
+}
+.tipue_drop_box:before 
+{
+	border-bottom-color: #dcdcdc;
+	border-width: 9px;
+	left: 42px;
+	margin-left: -9px;
+}
+
+#tipue_drop_wrapper
+{
+     margin: 6px;
+}
+#tipue_drop_wrapper a
+{
+     text-decoration: none;
+}
+.tipue_drop_item
+{
+     background-color: #fff;
+}
+.tipue_drop_item:hover
+{
+     background-color: #f7f7f7;
+}
+.tipue_drop_left
+{
+     display: table-cell;
+     padding: 7px;
+}
+.tipue_drop_image
+{
+     width: 50px;
+     height: 50px;
+     border-radius: 27px;
+     border: 2px solid #fff;
+}
+.tipue_drop_right
+{
+     display: table-cell;
+     vertical-align: middle;
+     font: 300 14px/1.6 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #333;     
+     width: 170px;
+     padding: 0 7px;
+}

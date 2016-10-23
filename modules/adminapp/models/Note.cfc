@@ -13,8 +13,6 @@
 			beforeValidation("sanitizePrice");
 			afterFind("sanitizePrice");
 			beforeSave("sanitizeNameAndURLId");	
-			validatesUniquenessOf(property="address");
-			validatesUniquenessOf(property="urlid");
 			
 			// Other
 			super.init(); 			
